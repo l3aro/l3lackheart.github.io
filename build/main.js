@@ -301,27 +301,27 @@ var map = {
 		14
 	],
 	"../pages/cart/cart.module": [
-		302,
+		303,
 		13
 	],
 	"../pages/check-out/check-out.module": [
-		303,
+		302,
 		12
 	],
 	"../pages/color-mix/color-mix.module": [
-		306,
+		304,
 		1
 	],
 	"../pages/home/home.module": [
-		304,
+		306,
 		11
 	],
 	"../pages/login/login.module": [
-		305,
+		315,
 		10
 	],
 	"../pages/notification/notification.module": [
-		308,
+		305,
 		9
 	],
 	"../pages/password-change/password-change.module": [
@@ -329,11 +329,11 @@ var map = {
 		8
 	],
 	"../pages/password-code/password-code.module": [
-		309,
+		308,
 		7
 	],
 	"../pages/password-sendmail/password-sendmail.module": [
-		311,
+		309,
 		6
 	],
 	"../pages/register/register.module": [
@@ -345,7 +345,7 @@ var map = {
 		0
 	],
 	"../pages/tabs/tabs.module": [
-		313,
+		311,
 		4
 	],
 	"../pages/wallet/wallet.module": [
@@ -353,7 +353,7 @@ var map = {
 		3
 	],
 	"../pages/web-view/web-view.module": [
-		315,
+		313,
 		2
 	]
 };
@@ -380,7 +380,7 @@ module.exports = webpackAsyncContext;
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ServerApi; });
 var ServerApi;
 (function (ServerApi) {
-    ServerApi.Environment = "development";
+    ServerApi.Environment = "production";
     ServerApi.SERVER_NAME = {
         development: "http://www.cponpaint.grad.stal",
         production: "http://cponpaint.grad.leotive.net"
@@ -606,20 +606,20 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/cart-history-detail/cart-history-detail.module#CartHistoryDetailPageModule', name: 'CartHistoryDetailPage', segment: 'cart-history-detail', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/cart-history/cart-history.module#CartHistoryPageModule', name: 'CartHistoryPage', segment: 'cart-history', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/check-out/check-out.module#CheckOutPageModule', name: 'CheckOutPage', segment: 'check-out', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/cart/cart.module#CartPageModule', name: 'CartPage', segment: 'cart', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/color-mix/color-mix.module#ColorMixPageModule', name: 'ColorMixPage', segment: 'color-mix', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/password-change/password-change.module#PasswordChangePageModule', name: 'PasswordChangePage', segment: 'password-change', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/notification/notification.module#NotificationPageModule', name: 'NotificationPage', segment: 'notification', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/home/home.module#HomePageModule', name: 'HomePage', segment: 'home', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/password-change/password-change.module#PasswordChangePageModule', name: 'PasswordChangePage', segment: 'password-change', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/password-code/password-code.module#PasswordCodePageModule', name: 'PasswordCodePage', segment: 'password-code', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/password-sendmail/password-sendmail.module#PasswordSendmailPageModule', name: 'PasswordSendmailPage', segment: 'password-sendmail', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/suggest-product/suggest-product.module#SuggestProductPageModule', name: 'SuggestProductPage', segment: 'suggest-product', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/register/register.module#RegisterPageModule', name: 'RegisterPage', segment: 'register', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/tabs/tabs.module#TabsPageModule', name: 'TabsPage', segment: 'tabs', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/suggest-product/suggest-product.module#SuggestProductPageModule', name: 'SuggestProductPage', segment: 'suggest-product', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/web-view/web-view.module#WebViewPageModule', name: 'WebViewPage', segment: 'web-view', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/wallet/wallet.module#WalletPageModule', name: 'WalletPage', segment: 'wallet', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/web-view/web-view.module#WebViewPageModule', name: 'WebViewPage', segment: 'web-view', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
                 })
             ],
